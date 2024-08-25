@@ -1,0 +1,165 @@
+html {
+   scroll-behavior: smooth;
+   background-image: url("./pexels-stywo-1261728.jpg");
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   box-sizing: border-box;
+   color: rgb(227, 227, 227);
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: "Work Sans", sans-serif;
+   height: 100%;
+}
+
+header {
+   background-color: #333333;
+   padding: 10px 0;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   height: 5vh;
+   align-items: center;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(227, 227, 227);
+   transition: color 0.3s ease;
+}
+
+a:hover {
+   color: #46bb99;
+}
+
+h1 {
+   font-size: 66px;
+   font-weight: 700;
+   margin: 0;
+   padding-bottom: 150px;
+   text-align: center;
+   animation: appear 2s ease-in-out;
+}
+
+@keyframes appear {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+main {
+   padding: 10px;
+}
+
+main .container {
+   border-radius: 10px;
+   margin-top: 100px;
+}
+
+section {
+   max-width: 500px;
+   animation: appear 2s ease-in-out;
+   margin-bottom: 250px;
+}
+
+#section2,
+#section4 {
+   display: flex;
+   justify-content: flex-end;
+}
+
+#section2 h2,
+#section4 h2 {
+   text-align: end;
+}
+
+h2 {
+   border-bottom: 2px solid green;
+   padding-bottom: 5px;
+   font-size: 30px;
+}
+
+footer {
+   background-color: #333333;
+   height: 5.7vh;
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+   font-size: 14px;
+}
+
+/* Scroll up button */
+.scroll-to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   display: none; /* Initially hidden */
+   align-items: center;
+   justify-content: center;
+   font-size: 20px;
+   cursor: pointer;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+   background-color: #555;
+}
+
+/* Media queries */
+.container {
+   margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+   .container {
+      width: 100%;
+   }
+}
+
+@media (min-width: 576px) {
+   .container {
+      width: 540px;
+   }
+}
+
+@media (min-width: 768px) {
+   .container {
+      width: 720px;
+   }
+}
+
+@media (min-width: 992px) {
+   .container {
+      width: 960px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container {
+      width: 1140px;
+   }
+}
+
+@media (min-width: 1400px) {
+   .container {
+      width: 1320px;
+   }
+}
